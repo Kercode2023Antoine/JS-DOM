@@ -1,10 +1,10 @@
 // CODE HERE
-let secret = document.querySelector("p");
-function affiche(){
-    secret = secret.classList.toggle("hidden");
+
+function show(){
+    let secret = document.querySelector("p");
+    secret.classList.toggle("hidden");
 }
 
-
 let button = document.querySelector("button")
-button.addEventListener('click',affiche);
+button.addEventListener('click',show);
 
