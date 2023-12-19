@@ -20,6 +20,20 @@
      * Faire une boucle sur les pizzas
      * Ajouter chaque pizza en tant qu'élément de list dans "ul"
      */
+    let listContent = document.querySelector("#yield ul");
+    let list ;
+
+    
+
+    for (let i = 0 ; i < pizzas.length ; i ++) {
+         list = document.createElement("li");
+         list.innerText = pizzas[i];
+         listContent = listContent.appendChild(list);
+    }
+    
+console.log(listContent)
+    
+    
 </script>
 </body>
 </html>
