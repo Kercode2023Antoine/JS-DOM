@@ -13,17 +13,22 @@
 
 <p class="class-cool">
     Mon super contenu récupéré par la classe
+    
 </p>
 
-<a>
+<a class="class-cool">
     Mon super contenu récupéré par le tag section
 </a>
 
 <!-- À appeler dans un js à part -->
 <script type="text/javascript">
-    // let elementById = document. (...)
-    // let elementsByClass = document. (...)
-    // let elementsByTag = document. (...)
+     let body = document.querySelector("body");
+     let elementById = document.querySelector("p");
+     let elementsByClass = document.querySelectorAll("p");
+     let elementsByTag = document.querySelector("a");
+     let elementsByP = document.querySelector("p.class-cool");
+     let elementsByP2 = document.querySelectorAll(".class-cool");
+     
 
     console.log("-----------------------------------");
     console.log("Afficher grâce à l'id :");
@@ -35,6 +40,12 @@
     console.log("Afficher grâce à au tag :");
     console.log(elementsByTag);
     console.log("-----------------------------------");
+    console.log(elementsByP)
+    console.log("-----------------------------------");
+    console.log(elementsByP2)
+   
+
+    
 </script>
 </body>
 </html>

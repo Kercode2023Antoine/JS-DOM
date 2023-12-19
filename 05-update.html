@@ -15,18 +15,28 @@
 
 
 <h1>Mon titre à changer</h1>
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium animi, aperiam at autem dolor ea et, harum id in itaque magni minus molestiae officiis praesentium tenetur vero voluptatem
+<p class ="toto">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium animi, aperiam at autem dolor ea et, harum id in 
+    itaque magni minus molestiae officiis praesentium tenetur vero voluptatem
 </p>
 
 
 <!-- À appeler dans un js à part -->
 <script type="text/javascript">
     // 1 - stocker le titre dans une variable
+    let myTitle = document.querySelector("h1");
     // 2 - stocker le paragraphe dans une variable
+    let myParagraphe = document.querySelector("p");
     // 3 - Changer le titre "Mon titre à changer" => "<span>Mon super titre</span>"
+    myTitle.innerHTML= "<span>Mon super titre</span>";
     // 4 - Ajouter un ! à la fin du paragraphe : "voluptatem" => "voluptatem !" sans remplacer le texte
+    myParagraphe.innerText = myParagraphe.innerText + " !";
     // 5 - Ajouter la classe "red" au paragraphe
+
+
+    myParagraphe=myParagraphe.classList.toggle('red');
+
+    // myParagraphe=myParagraphe.className +=" red"
 </script>
 </body>
 </html>
